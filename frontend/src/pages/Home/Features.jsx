@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowUpRight } from 'lucide-react';
 import Section from '../../components/Section/Section';
 import { modules, stats } from '../../data/content';
+import { toolPath } from '../../data/tools';
 
 function Count({ text }) {
   const m = /^(\d+)(.*)$/.exec(text); const ref = useRef(null); const [n, setN] = useState(0);
@@ -25,11 +27,11 @@ export default function Features() {
     <Section id="features" className="overlap">
       <nav className="dock stagger" aria-label="Campus services">
         {modules.map(m => (
-          <a key={m.key} href="#solution" className="dock-item" style={{ '--c': `var(--${m.color})` }}>
+          <Link key={m.key} to={toolPath[m.key]} className="dock-item" style={{ '--c': `var(--${m.color})` }}>
             <span className="di"><m.icon size={20} /></span>
             <span><b>{m.title}</b><small>{m.short}</small></span>
             <ArrowUpRight className="da" size={16} />
-          </a>
+          </Link>
         ))}
       </nav>
       <div className="figures stagger">

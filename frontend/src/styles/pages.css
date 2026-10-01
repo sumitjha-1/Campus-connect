@@ -1,0 +1,13 @@
+/* pages.css — inner pages: tool / redirect pages. */
+.pg{max-width:1180px;margin:auto;padding:calc(70px + clamp(24px,4vw,40px)) clamp(16px,4vw,32px) 40px;min-height:80vh}
+/* ----- redirect + coming soon pages ----- */
+.redir{max-width:560px;margin:clamp(24px,6vh,70px) auto;text-align:center;padding:clamp(28px,5vw,48px);border-radius:40px;background:var(--card);border:1px solid var(--border);box-shadow:var(--shadow-h)}
+.redir .eyebrow{justify-content:center}.redir h1{font-size:clamp(1.6rem,3.4vw,2.2rem);margin-bottom:10px}.redir .body{margin-inline:auto;margin-bottom:22px}
+.redir .hero-cta{justify-content:center}
+.redir-ic{width:68px;height:68px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;color:var(--rose);background:color-mix(in srgb,var(--rose) 14%,transparent);box-shadow:0 0 0 10px color-mix(in srgb,var(--rose) 8%,transparent)}
+.soon-list{list-style:none;padding:0;margin:0 0 26px;display:grid;gap:10px;text-align:left}
+.soon-list li{display:flex;gap:12px;align-items:flex-start;padding:12px 16px;border-radius:20px;font-size:.92rem;background:color-mix(in srgb,var(--c) 8%,transparent);border:1px solid color-mix(in srgb,var(--c) 20%,transparent)}
+.soon-list svg{flex:none;margin-top:3px;color:var(--c)}
+.redir.tool .redir-ic{color:var(--c);background:color-mix(in srgb,var(--c) 14%,transparent);box-shadow:0 0 0 10px color-mix(in srgb,var(--c) 8%,transparent)}
+.redir.tool .eyebrow{color:var(--c)}
+
