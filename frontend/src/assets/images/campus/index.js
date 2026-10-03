@@ -11,6 +11,8 @@ import lostFoundDay from './Grand University Gateway with Domes.png';
 import lostFoundNight from './Twilight Entrance to Gautam Buddha University.png';
 import jobsDay from './campus-jobs-day.png';
 import jobsNight from './campus-jobs-night.png';
+import helpDay from './campus-help-day.png';
+import helpNight from './campus-help-night.png';
 
 // Marketplace hero: drop your shopping-centre photos in this folder named
 //   campus-market-day.(png|jpg|jpeg|webp)   and   campus-market-night.(png|jpg|jpeg|webp)
@@ -26,4 +28,5 @@ export const campusImages = {
   lostFound: { light: lostFoundDay, dark: lostFoundNight }, // Lost & Found hero (university gateway)
   market: { light: market('day') || gateDay, dark: market('night') || gateNight }, // Marketplace hero (shopping centre)
   jobs: { light: jobsDay, dark: jobsNight },            // Jobs & Alumni hero
+  help: { light: helpDay, dark: helpNight },            // Campus Assistance hero (campus walkway)
 };

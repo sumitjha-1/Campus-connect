@@ -5,7 +5,7 @@ import LostFound from '../pages/LostFound/LostFound';
 import Calibrate from '../pages/LostFound/Calibrate';
 import Market from '../pages/Market/Market';
 import Jobs from '../pages/Jobs/Jobs';
-import ToolPage from '../pages/Tool/ToolPage';
+import Help from '../pages/Help/Help';
 
 export default function AppRoutes() {
   return (<Routes>
@@ -13,7 +13,7 @@ export default function AppRoutes() {
     <Route path="/lost-and-found" element={<LostFound />} />
     <Route path="/marketplace" element={<Market />} />
     <Route path="/jobs-alumni" element={<Jobs />} />
-    <Route path="/campus-assistance" element={<ToolPage k="help" />} />
+    <Route path="/campus-assistance" element={<Help />} />
     <Route path="/events" element={<Events />} />
     <Route path="/lf-calibrate" element={<Calibrate />} />
     <Route path="*" element={<Navigate to="/" replace />} />

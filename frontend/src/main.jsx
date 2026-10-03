@@ -12,6 +12,7 @@ import './styles/lostfound.css';
 import './styles/market.css';
 import './styles/theme.css';
 import './styles/jobs.css';
+import './styles/help.css';
 import 'leaflet/dist/leaflet.css';
 
 createRoot(document.getElementById('root')).render(
