@@ -1,0 +1,20 @@
+/* theme.css: calm light-mode backdrop shared by all pages (dark mode untouched) */
+:root:not([data-theme=dark]){
+  --bg:#f3f5f1;      /* navbar strip and cards blend with the page */
+  --bg-alt:#e9eeea;
+}
+
+html:not([data-theme=dark]){
+  background:
+    radial-gradient(1100px 600px at 0% 0%, rgba(120,150,210,.10), transparent 65%),
+    linear-gradient(180deg,#f6f7f4 0%,#f0f3ef 50%,#e8eeeb 100%);
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+/* the old purple/blue glows from global.css: keep them very faint */
+html:not([data-theme=dark]) body::before{
+  background:
+    radial-gradient(800px 520px at 5% 0, color-mix(in srgb,var(--primary) 6%,transparent), transparent),
+    radial-gradient(800px 520px at 100% 92%, color-mix(in srgb,var(--accent) 8%,transparent), transparent);
+}

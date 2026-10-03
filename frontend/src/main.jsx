@@ -9,6 +9,9 @@ import './styles/pages.css';
 import './styles/events.css';
 import './styles/nav.css';
 import './styles/lostfound.css';
+import './styles/market.css';
+import './styles/theme.css';
+import './styles/jobs.css';
 import 'leaflet/dist/leaflet.css';
 
 createRoot(document.getElementById('root')).render(
